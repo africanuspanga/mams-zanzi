@@ -1,0 +1,6 @@
+.DS_Store
+
+# Original full-size source images (optimized copies live in assets/img)
+/*.jpg
+/*.jpeg
+/*.png
