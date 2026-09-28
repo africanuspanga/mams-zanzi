@@ -3,7 +3,7 @@
    ========================================================= */
 
 // 👉 Set the company WhatsApp number here (country code, digits only — no +, spaces or leading 0)
-const WHATSAPP_NUMBER = "255000000000";
+const WHATSAPP_NUMBER = "255777479480";
 const WHATSAPP_GREETING = "Hello MAMS ZANZI, I would like to enquire about your logistics services.";
 
 const waLink = (text) => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;

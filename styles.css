@@ -400,6 +400,9 @@ svg { width: 1.1em; height: 1.1em; fill: none; stroke: currentColor; stroke-widt
 .cta__copy p { margin-top: 18px; color: rgba(255, 255, 255, .82); font-size: 1.05rem; max-width: 480px; }
 .cta__copy .cta__strong { color: #fff; font-weight: 700; font-size: 1.2rem; }
 .cta__actions { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 14px; }
+.cta__copy .cta__phone { margin-top: 20px; font-size: 1rem; }
+.cta__phone a { color: #fff; font-weight: 700; white-space: nowrap; }
+.cta__phone a:hover { color: #7fe3e6; }
 
 .quote {
   background: #fff; border-radius: var(--radius-lg); padding: clamp(24px, 3vw, 34px);
