@@ -216,6 +216,21 @@ svg { width: 1.1em; height: 1.1em; fill: none; stroke: currentColor; stroke-widt
 .check svg { width: 14px; height: 14px; stroke-width: 3; }
 
 /* =========================================================
+   AIR CARGO
+   ========================================================= */
+.aircargo__grid { display: grid; grid-template-columns: 1.4fr 1fr; grid-template-rows: repeat(2, 260px); gap: 20px; }
+.aircargo__item { position: relative; overflow: hidden; border-radius: var(--radius-lg); margin: 0; box-shadow: var(--shadow); }
+.aircargo__item--main { grid-row: span 2; }
+.aircargo__item img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.2, .7, .2, 1); }
+.aircargo__item:hover img { transform: scale(1.05); }
+.aircargo__item figcaption {
+  position: absolute; left: 16px; bottom: 16px;
+  padding: 8px 16px; border-radius: 999px;
+  background: rgba(1, 34, 61, .78); color: #fff; font-size: .85rem; font-weight: 600;
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+}
+
+/* =========================================================
    SERVICES
    ========================================================= */
 .services { background: var(--bg-soft); border-radius: var(--radius-xl); margin: 0 12px; }
@@ -538,6 +553,8 @@ svg { width: 1.1em; height: 1.1em; fill: none; stroke: currentColor; stroke-widt
   .step__icon { grid-row: span 3; margin: 0; }
   .step__n, .step h3, .step p { grid-column: 2; margin-top: 0; }
   .cta__panel { grid-template-columns: 1fr; }
+  .aircargo__grid { grid-template-columns: 1fr 1fr; grid-template-rows: 340px 240px; }
+  .aircargo__item--main { grid-row: auto; grid-column: span 2; }
 }
 
 @media (max-width: 600px) {
@@ -558,6 +575,8 @@ svg { width: 1.1em; height: 1.1em; fill: none; stroke: currentColor; stroke-widt
   .services__grid { grid-template-columns: 1fr; }
   .svc, .svc--wide { grid-column: span 1 !important; min-height: 300px; }
   .gallery__item { width: 280px; height: 210px; }
+  .aircargo__grid { grid-template-columns: 1fr; grid-template-rows: none; gap: 14px; }
+  .aircargo__item, .aircargo__item--main { grid-column: auto; height: 240px; }
   .gallery__item--tall { width: 200px; height: 270px; }
   .review { width: 290px; padding: 20px; }
   .quote__row { grid-template-columns: 1fr; }
